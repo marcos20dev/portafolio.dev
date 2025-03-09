@@ -48,43 +48,38 @@ const elementosNav: ElementoNav[] = [
         </div>
     </nav>
 </div>
-
 <script>
     document.querySelectorAll('a[href^="#"]').forEach((enlace) => {
         enlace.addEventListener("click", function (e) {
             e.preventDefault();
-            const objetivo = e.currentTarget;
-            const idObjetivo = objetivo.getAttribute("href")?.substring(1) || "";
-            const elementoObjetivo = document.getElementById(idObjetivo);
-            if (elementoObjetivo) {
-                elementoObjetivo.scrollIntoView({
-                    behavior: "smooth",
-                });
-            }
+            const idObjetivo = enlace.getAttribute("href")?.substring(1) || "";
+            document.getElementById(idObjetivo)?.scrollIntoView({ behavior: "smooth" });
         });
     });
 
     document.addEventListener("DOMContentLoaded", () => {
         const secciones = document.querySelectorAll("section[id]");
         const enlacesNav = document.querySelectorAll("nav a[href^='#']");
-        const opcionesObservador = {threshold: 0.6};
+        const opcionesObservador = { threshold: 0.6 };
 
-        const callbackObservador = (entradas: IntersectionObserverEntry[]) => {
-            entradas.forEach((entrada: IntersectionObserverEntry) => {
+        const callbackObservador = (entradas) => {
+            entradas.forEach((entrada) => {
                 if (entrada.isIntersecting) {
                     enlacesNav.forEach((enlace) => enlace.classList.remove("activo"));
-                    const id = entrada.target.id;
-                    const enlaceActivo = document.querySelector(`a[href="#${id}"]`);
-                    enlaceActivo?.classList.add("activo");
+                    const id = entrada.target.getAttribute("id");
+                    const enlaceActivo = document.querySelector(`nav a[href="#${id}"]`);
+                    if (enlaceActivo) {
+                        enlaceActivo.classList.add("activo");
+                    }
                 }
             });
         };
-
 
         const observador = new IntersectionObserver(callbackObservador, opcionesObservador);
         secciones.forEach((seccion) => observador.observe(seccion));
     });
 </script>
+
 
 <style>
 @media (max-width: 767px) {
