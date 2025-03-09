@@ -4,9 +4,7 @@
 
 Soy **Ingeniero de Sistemas** especializado en desarrollo de software web, movil y desktop, utilizando tecnologías como Laravel, PostgreSQL, Flutter, Firebase, phpMyAdmin, Java, SonarQube y mucho más. 🌟
 
-![Portfolio Preview](https://github.com/user-attachments/assets/e284a42b-15c5-495c-99c7-ad5c1eb3bbe7)
-
-
+![img.png](img.png)
 ---
 
 🔗 [Ver Demo](https://oscarhernandez.vercel.app/)
