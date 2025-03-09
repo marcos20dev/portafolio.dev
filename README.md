@@ -1,41 +1,54 @@
-# Portfolio
-> Developed with passion while listening to _Hurry Up Tomorrow by The Weeknd_. Completed in just 3 days.
-![OscarHernandez-portfolio](https://github.com/user-attachments/assets/e284a42b-15c5-495c-99c7-ad5c1eb3bbe7)
-[![Deploy Status](https://img.shields.io/badge/Deploy-Vercel-black?style=flat&logo=vercel)](tu-url-deploy)
+# 🎯 Marcos Moises Ruiz Tandaypan | Portfolio
+
+> Desarrollado con pasión escuchando _Hurry Up Tomorrow by The Weeknd_. 🚀 Adaptado y personalizado por Marcos Moises Ruiz Tandaypan.
+
+Soy **Ingeniero de Sistemas** especializado en desarrollo de software web, movil y desktop, utilizando tecnologías como Laravel, PostgreSQL, Flutter, Firebase, phpMyAdmin, Java, SonarQube y mucho más. 🌟
+
+![Portfolio Preview](https://github.com/user-attachments/assets/e284a42b-15c5-495c-99c7-ad5c1eb3bbe7)
+
 
 ---
 
-[Demo](https://oscarhernandez.vercel.app/)
+🔗 [Ver Demo](https://oscarhernandez.vercel.app/)
 
-[Astro Themes](https://astro.build/themes/details/dark-minimal/)
+📌 [Astro Theme - Dark Minimal](https://astro.build/themes/details/dark-minimal/)
 
-[ReactBits Showcase](https://www.reactbits.dev/showcase) 
+📌 Componente `<LetterGlitch/>` obtenido desde [ReactBits.dev](https://www.reactbits.dev/showcase)
 
-The component `<LetterGlitch \>` was taken from [ReactBits.dev](https://www.reactbits.dev/)
+---
 
-## **Stack**  
-### **Frontend**  
+## 🛠️ Stack Tecnológico
+
+### 🖥️ Frontend
+
 ![Astro](https://img.shields.io/badge/Astro-FF5D01?logo=astro&logoColor=white)
-![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
 
-### **Tools**  
+### 🔧 Herramientas
+
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white)
 ![Prettier](https://img.shields.io/badge/Prettier-F7B93E?logo=prettier&logoColor=black)
 ![Canva](https://img.shields.io/badge/Canva-c900c3?logo=canva&logoColor=white)
 
-### **Show your favorite Spotify album (or your own)** ![Spotify](https://img.shields.io/badge/Spotify-06cc1a?logo=spotify&logoColor=white)
-1. Choose your Spotify album
-2. Access the share options
-3. Select 'copy embed code'
-```
-<iframe src="https://open.spotify.com/embed/album/ALBUM_ID" style="border-radius:12px border:0;" class="w-full h-40" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-```
-4. Insert the embed code on footer.astro
+### 🎵 Inserta tu Álbum Favorito de Spotify
+![Spotify](https://img.shields.io/badge/Spotify-06cc1a?logo=spotify&logoColor=white)
 
-That's it!
+Sigue estos pasos:
 
-## **Project structure**
+1. Selecciona tu álbum favorito en Spotify.
+2. Ve a opciones de compartir.
+3. Copia el código embebido.
+
+```html
+<iframe src="https://open.spotify.com/embed/album/TU_ID_ALBUM" style="border-radius:12px; border:0;" class="w-full h-40" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+```
+4. Pega el código en tu componente `footer.astro`.
+
+---
+
+## 📂 Estructura del Proyecto
+
 ```
 public/
 └── svg/
@@ -46,21 +59,32 @@ src/
 └── pages/
 ```
 
-## **Local configuration** 
-1. Clone the repo:  
+---
+
+## ⚙️ Instalación y Uso Local
+
+1. **Clona el repositorio:**
+```bash
+git clone https://github.com/marcos20dev/portfolio
 ```
-git clone https://github.com/gothsec/portfolio
-```
-2. Install dependencies:
-```  
+
+2. **Instala las dependencias:**
+```bash
 npm install
 ```
-3. Start the develpoment server:
-```  
+
+3. **Ejecuta el servidor de desarrollo:**
+```bash
 npm run dev
 ```
 
-> **Important Notice:**  
-> This project is licensed under the [MIT License](https://opensource.org/licenses/mit).  
-> According to the license terms, any redistribution (including compiled or modified versions), you **must** retain the original copyright 
-> notice and the full license text. Copyright © 2025 Oscar Hernandez. All rights reserved.
+---
+
+## 📜 Licencia
+
+Este proyecto está basado en el trabajo original de [Oscar Hernandez](https://oscarhernandez.vercel.app/) y está licenciado bajo la licencia [MIT](https://opensource.org/licenses/mit).
+
+> **Aviso Importante:**  
+> Si redistribuyes este proyecto (modificado o no), **debes mantener** la mención original del autor y el texto completo de la licencia.
+
+© 2025 Oscar Hernandez. Todos los derechos reservados.

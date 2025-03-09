@@ -1,18 +1,33 @@
 ---
 const technologies = [
+  "laragon",
   "astro",
-  "react",
-  "typeScript",
-  "tailwindcss",
-  "nodejs",
-  "HTML5",
+  "nginx",
+  "postgres",
+  "laravel",
+  "flutter",
+  "firebase",
+  "IIS",
   "CSS3",
-  "javaScript",
+  "tensorflow",
+  "docker",
+  "django",
   "git",
-  "supabase",
+  "HTML5",
+  "java",
+  "javaScript",
   "mysql",
-  "bash"
+
+  "xampp",
+  "php",
+  "python",
+  "sqlite",
+  "tailwindcss",
+  "vue",
+  "NetBeans",
+  "enterprise"
 ];
+
 ---
 
 <div class="relative overflow-x-hidden py-8">
@@ -21,19 +36,19 @@ const technologies = [
 
   <div class="flex animate-scroll hover:animate-paused gap-12 md:gap-20 w-max">
     {[...technologies, ...technologies, ...technologies].map((tech) => (
-      <div class="flex items-center gap-2 group transition-all duration-300">
-        <img
-          src={`/svg/${tech}.svg`}
-          alt={tech}
-          class="h-7 w-auto object-contain transition-transform group-hover:scale-110 opacity-60"
-          width="30"
-          height="30"
-          loading="lazy"
-        />
-        <span class="text-lg font-medium text-[var(--white-icon)]">
+        <div class="flex items-center gap-2 group transition-all duration-300">
+          <img
+              src={`/svg/${tech}.svg`}
+              alt={tech}
+              class="h-7 w-auto object-contain transition-transform group-hover:scale-110 opacity-60"
+              width="30"
+              height="30"
+              loading="lazy"
+          />
+          <span class="text-lg font-medium text-[var(--white-icon)]">
           {tech.charAt(0).toUpperCase() + tech.slice(1)}
         </span>
-      </div>
+        </div>
     ))}
   </div>
 </div>
@@ -47,10 +62,14 @@ const technologies = [
   .animate-scroll {
     animation: scroll 60s linear infinite;
   }
-  
+
   @media (min-width: 768px) {
     .animate-scroll {
       animation-duration: 50s;
     }
   }
 </style>
+
+<script>
+
+</script>
